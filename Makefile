@@ -9,8 +9,7 @@ PDF = $(patsubst %.tex,%.pdf,$(TEX))
 all: $(PDF)
 
 %.pdf: %.tex
-	#pdflatex $<
-	tectonic -X compile $<
+	tectonic -X compile $< || pdflatex $<
 
 show: $(PDF)
 	open $<
