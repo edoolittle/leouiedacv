@@ -9,15 +9,17 @@ PDF = $(patsubst %.tex,%.pdf,$(TEX))
 all: $(PDF)
 
 %.pdf: %.tex
-	pdflatex $<
-	#tectonic -X compile $<
+	#pdflatex $<
+	tectonic -X compile $<
 
 show: $(PDF)
 	open $<
 
 push:
+	git push
+
+commit:
 	git commit -a -m "automated commit"
-	git push 
 
 clean:
 	rm -f $(PDF)
