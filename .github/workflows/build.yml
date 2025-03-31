@@ -14,10 +14,9 @@ defaults:
     # https://github.com/actions/setup-python/issues/132
     shell: bash -l {0}
 
-jobs:
-  job-name:
-    permissions:
-      contents: write
+permissions:
+  contents: write
+  pages: write
 
 jobs:
   build:
