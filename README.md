@@ -3,7 +3,7 @@
 These are the LaTeX sources for my academic CV.
 
 **Download** the latest compiled PDF:
-[cv.pdf](https://github.com/leouieda/cv/raw/pdf/cv.pdf)
+[cv.pdf](https://raw.githubusercontent.com/edoolittle/leouiedacv/pdf/cv.pdf)
 
 ## Template
 
@@ -18,7 +18,7 @@ To use it:
   `environment.yml` file provided in the repository.
 * Fill out the variables and fields in the `.tex` file.
 * Compile the PDF to check the results with `make show`.
-* Push your changes and GitHub Actions should do it's magic and make the PDF
+* Push your changes and GitHub Actions should do its magic and make the PDF
   available at `https://github.com/YOURUSERNAME/cv/raw/pdf/cv.pdf`.
 
 ### About
