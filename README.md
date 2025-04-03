@@ -3,7 +3,7 @@
 These are the LaTeX sources for my academic CV.
 
 **Download** the latest compiled PDF:
-[cv.pdf](https://raw.githubusercontent.com/edoolittle/leouiedacv/pdf/cv.pdf)
+[cv.pdf](https://raw.githubusercontent.com/edoolittle/cv/pdf/cv.pdf)
 
 ## Template
 
