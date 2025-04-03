@@ -14,6 +14,7 @@ defaults:
     # https://github.com/actions/setup-python/issues/132
     shell: bash -l {0}
 
+# Permissions added 2025-04-03
 permissions:
   contents: write
   pages: write
