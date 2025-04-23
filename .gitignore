@@ -10,3 +10,4 @@ output/
 *.pdf
 auto/
 *.synctex.gz
+.DS_Store
