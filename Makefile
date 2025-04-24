@@ -17,6 +17,9 @@ show: $(PDF)
 push:
 	git push
 
+pull:
+	git pull
+
 commit:
 	git commit -a -m "automated commit"
 
