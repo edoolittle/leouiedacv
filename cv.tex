@@ -116,6 +116,7 @@
 \definecolor{lightgray}{gray}{0.9}
 \definecolor{mediumblue}{HTML}{2060c2}
 \definecolor{lightblue}{HTML}{a0c3ff}
+\definecolor{darkblue}{HTML}{000080}
 
 % No indentation
 \setlength\parindent{0cm}
@@ -177,6 +178,7 @@
 \newcommand{\Preprint}[1]{Preprint: \href{https://doi.org/#1}{#1}}
 \newcommand{\GitHub}[1]{\faGithub{} \href{https://github.com/#1}{#1}}
 \newcommand{\Data}[1]{\faChartBar{} doi:\href{https://doi.org/#1}{#1}}
+\newcommand{\MYhref}[3][darkblue]{\href{#2}{\color{#1}{#3}}}
 
 % Define command to insert month name and year as date
 \newdateformat{monthyear}{\monthname[\THEMONTH], \THEYEAR}
@@ -382,7 +384,7 @@
   \\
   \Duration{2022}{2027} & \textbf{Banff International Research
     Station}.
-  \href{https://www.nserc-crsng.gc.ca/professors-professeurs/Grants-Subs/DIS-ADIR_eng.asp}{NSERC Discovery Institutes Support Grants}. %
+  \MYhref{https://www.nserc-crsng.gc.ca/professors-professeurs/Grants-Subs/DIS-ADIR_eng.asp}{NSERC Discovery Institutes Support Grants}.
   %\newline
   \newline
   \Malabika{} (PI), \Laleh{}, \Me{}, \Marc{}, \Viqar{}, \Mark{}, \Lei{}.
@@ -432,7 +434,7 @@
   University of Regina (\textbf{Co-supervisor})
   \\
   \Duration{2023}{2024} & Layne Burns, NSERC
-  \href{https://www.nserc-crsng.gc.ca/students-etudiants/ug-pc/usra-brpc_eng.asp}{USRA},
+  \MYhref{https://www.nserc-crsng.gc.ca/students-etudiants/ug-pc/usra-brpc_eng.asp}{USRA},
   First Nations University of Canada (\textbf{Supervisor})
   \\
   \Duration{2023}{\Ongoing} & John Porrit, MA in Mathematics
