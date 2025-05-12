@@ -99,6 +99,12 @@
 % Control PDF metadata and links
 \usepackage[colorlinks=true]{hyperref}
 
+% This should break long URLs per
+% https://tex.stackexchange.com/questions/386495/how-to-wrap-a-url-or-reference
+% but does not seem to help
+%% Wrap long links
+%\usepackage[ocgcolorlinks]{ocgx2}
+
 % Template configuration
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -212,6 +218,12 @@
   pdftitle={\Title{} - \MyName},
   pdfauthor={\MyName},
 }
+% This should break long URLs per
+% https://tex.stackexchange.com/questions/386495/how-to-wrap-a-url-or-reference
+% but does not seem to help
+%\makeatletter
+%    \g@addto@macro{\UrlBreaks}{\do\/\do\-\do\_}
+%\makeatother
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
@@ -731,8 +743,8 @@
 
 \begin{EntriesTableYear}
   \Year{2025} & \Me{}.  Division with Remainder: Indigenous Perspectives.
-  Alberta Mathematics Dialogue, University of Calgary.
-  %\Website{drive.google.com/file/d/1g7yYE2SIMT7CKRNZPeo2jIdBGE6Zl5AA/view}
+  Alberta Mathematics Dialogue 2025, University of Calgary.
+  \Website{tinyurl.com/division-with-remainder-pptx}
   \\
   \Year{2025} & \Me{}.  Tips and Tricks for UR Courses.  FNUniv Instructors
   Lunch and Learn, First Nations University of Canada.
@@ -810,9 +822,9 @@
   Indigenizing math education at the post-secondary level
   \\
   \Year{2019} & \Me{}, \& Russell, G.  Mathematics as a Tool for
-  Colonization (with Gale Russell), keynote presentation at Provoking
-  Curriculum, a conference at the Faculty of Education, University of
-  Regina
+  Colonization, keynote presentation at Provoking Curriculum,
+  Faculty of Education, University of Regina
+  %\Website{viewer.joomag.com/education-news-spring-2019/0753087001637684188/p15}
   \\
   \Year{2019} & \Me{}, \& Nolan, K.  Initiating and Nurturing
   Collaborations Between Mathematicians and Mathematics Educators,
@@ -843,6 +855,7 @@
   Exploring Indigenous Spiritualities In-Relation: How Might Science
   and Math Education Become Different?  Panel at the Canadian Society
   for the Study of Education conference
+  %\Website{csse-scee.ca/wp-content/uploads/2018/03/2018_CSSE_PC_Prog_CSSE_20180327_Complete.pdf}
   \\
   \Year{2018} & \Me{}.  What is Indigenous Mathematics?  Weweni Lecture,
   University of Winnipeg.  \newline
