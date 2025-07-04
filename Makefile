@@ -14,6 +14,13 @@ all: $(PDF)
 show: $(PDF)
 	open $<
 
+add:
+	@read -r -p "File(s) to add: " FTA ; \
+	git add $$FTA
+
+status:
+	git status
+
 push:
 	git push
 
@@ -22,7 +29,7 @@ pull:
 
 commit:
 	@read -r -p "Type commit message: " MSG ; \
-	git commit -a -m $$MSG
+	git commit -m $$MSG
 
 clean:
 	rm -f $(PDF)
