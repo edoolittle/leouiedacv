@@ -21,7 +21,8 @@ pull:
 	git pull
 
 commit:
-	git commit -a -m "automated commit"
+	@read -r -p "Type commit message: " MSG ; \
+	git commit -a -m $$MSG
 
 clean:
 	rm -f $(PDF)
