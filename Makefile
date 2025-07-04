@@ -29,7 +29,7 @@ pull:
 
 commit:
 	@read -r -p "Type commit message: " MSG ; \
-	git commit -m $$MSG
+	git commit -a -m "$$MSG"
 
 clean:
 	rm -f $(PDF)
