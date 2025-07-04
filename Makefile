@@ -12,7 +12,7 @@ all: $(PDF)
 	tectonic -X compile $< || pdflatex $<
 
 show: $(PDF)
-	open $<
+	open $< &> /dev/null || cygstart $<
 
 add:
 	@read -r -p "File(s) to add: " FTA ; \
